@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const data = await response.json();
-    console.log(data)
     document.getElementById("message").innerText = data.message;
   } catch (error) {
     console.error(error.message);

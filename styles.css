@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialaised;
+  font-family: "Courier new", "Courier", "monospace";
+  background: rgb(195, 200, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+image,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: rgb(125, 124, 252);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.wrapper-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+
+  input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: rgb(53, 64, 132);
+    color: rgb(226, 233, 239);
+    border: none;
+    border-radius: 5px;
+  }
+}
